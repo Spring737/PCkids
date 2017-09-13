@@ -1,23 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './root/app.component';
-import { ParentingComponent } from './parenting/parenting.component';
-import { ArticleDetailComponent } from './parenting/article-detail/article-detail.component';
-import { QuestionDetailComponent } from './parenting/question-detail/question-detail.component';
-import { QuestionComponent } from './parenting/question/question.component';
+
+import { AppComponent } from './app.component';
+import { IndexComponent } from './index/index.component';
+import { GoodShopComponent } from './good-shop/good-shop.component';
 
 @NgModule({
-  declarations:[
+  declarations: [
     AppComponent,
-    ParentingComponent,
-    ArticleDetailComponent,
-    QuestionDetailComponent,
-    QuestionComponent
+    IndexComponent,
+    GoodShopComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [QuestionComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
