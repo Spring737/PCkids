@@ -1,0 +1,13 @@
+section{
+  background: white;
+  padding: 10px;
+}
+article{
+  /*margin: 10px;*/
+  background: white;
+}
+.answer{
+  margin: 10px;
+  border: solid 2px rgba(255, 100, 100, 0.29);
+  box-sizing: border-box;
+}

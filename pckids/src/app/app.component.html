@@ -1,83 +1,84 @@
-
-<app-index> </app-index>
+<nav class="navbar navbar-default" id="top1">
+  <ul class="nav navbar-nav navbar-left">
+    <li class="navbar-brand" id="brand">
+      <a routerLink="/index" routerLinkActive="active" style="color: #fe8a6a">Hello Baby</a>
+    </li>
+    <li ><a routerLink="/parenting" routerLinkActive="active">
+      <i class="fa fa-life-ring"></i> &nbsp;育儿知识</a>
+    </li>
+    <li><a routerLink="/good-shop" routerLinkActive="active">
+      <i class="fa fa-ravelry "></i> &nbsp;母婴生活</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right" style="margin-right: 80px">
+    <li><a href=""> <i class="fa fa-user-o"></i> &nbsp;个人中心</a></li>
+    <li><a href="">登录</a></li>
+    <li><a href="">注册</a></li>
+  </ul>
+</nav>
 <div id="top2" >
   <ul class="top2-ul1">
-    <li><a href=""></a></li>
-    <li><a href="#" class="collect"><i class="fa fa-heart-o" ></i></a></li>
-    <li><a href="" class="goods" data-toggle="modal" data-target="#goodsModal">
+    <li class="dropdown setup-guides-dropdown">
+      <a href="#" class="collect"><i class="fa fa-heart-o" ></i>
+      </a>
+    </li>
+    <li><a href="#" class="goods" data-toggle="modal" data-target="#goodsModal">
       <i class="fa fa-shopping-bag"></i></a></li>
-    <li><a href="#" class="shore"><i class="fa fa-share-square-o"></i></a></li>
+    <li><a href="#" class="shore">
+      <i class="fa fa-share-square-o"></i></a></li>
   </ul>
   <ul class="top2-ul2">
-    <li><a href="#" ><i class="fa fa-paper-plane-o"></i></a></li>
-    <li><a href="#"><i class="fa fa-arrow-up"></i></a></li>
+    <li>
+      <a href="#" class="" data-toggle="modal" data-target="#feedbackModal">
+        <i class="fa fa-paper-plane-o"></i></a></li>
+
+    <li><a href="javascript:scroll(0,0)">
+      <i class="fa fa-arrow-up"></i></a></li>
   </ul>
 </div>
-<div class="slider">
-  <div class="slider-img" style="overflow: hidden">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-         <img src="../assets/imgs/timg%20(3).jpg" height="680px" width="1024px"/>
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-
-          <img src="../assets/imgs/timg%20(5).jpg" height="680px" width="1024px"/>
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-          <img src="../assets/imgs/timg.jpg" height="680px" width="1024px"/>
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  <div class="slider-post">
-    <div>
-      <span class="rec">&nbsp;&nbsp;&nbsp;&nbsp;精彩推荐</span>
-      <p class="post-title">  <a href="">&nbsp;&nbsp;&nbsp;&nbsp;
-        为什么换季要补充乳铁蛋白 </a></p>
-      <div class="post-txt">
-        <p>夏天拖着小尾巴走得慢悠悠恍惚惚，秋天收敛起锋芒来的静悄悄飘飘然~
-          又到了换季流感多发的时节,这寒风一吹，天冷要加衣服，此话对有孩子的家庭绝不需提醒。怕孩子生病，妈妈们早在网上给孩子买保暖衣服，把孩子层层叠叠裹上了。世界上有一种冷叫做你妈觉得你冷。
-          然鹅，集机智与美貌于一身的小优却认为：与其睁眼闭眼给孩子“买买买”，还不如增强孩子自身的免疫力呢！</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
 <div id="goodsModal" class="modal fade " role="dialog">
-<div class="modalTop">
-  <ul>
-    <li class="goodsTitle">
-      <i class="fa fa-shopping-basket fa-2x">
-      </i>&nbsp;&nbsp;&nbsp;好货分享</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+  <div class="modalTop">
+    <ul>
+      <li class="goodsTitle">
+        <i class="fa fa-shopping-basket fa-2x">
+        </i>&nbsp;&nbsp;&nbsp;好货分享</li>
+      <li>
+        <div class="goodsImg"><img src="../assets/images/goods1.jpg"/></div>
+        <div class="goodsDes">
+          <p><a href="">Quinny 奎尼 Zapp Xtra 儿童推车 </a></p>
+          <p><span class="prise">￥  1299</span></p>
+          <p><a href=""><span class="fa fa-heart-o fa-0.8x">&nbsp;&nbsp;喜欢(888)</span></a></p>
+        </div>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 </div>
+<div id="feedbackModal" class="modal fade" role="dialog">
+  <div class="feedback">
+  <h2><span>意见反馈与错误报告</span></h2>
+    <div class="fbCont" id="submitDiv">
+      <form id="postform" action="" method="post">
 
+        <div class="report">
+          <h3> <span class="tit">问题描述或意见反馈</span><i class="note" style="color: red">*</i> <span id="Jnote1" class="hidden"> 请填写正确内容和问题表述</span> </h3>
+          <textarea name="reportContent"rows="6"id="Jreport"maxlength="1500"></textarea>
+        </div>
+        <div class="contact">
+          <h3 class="w94"> <span class="tit">您的联系方式</span><i class="note" style="color: red">*</i> <span id="Jnote2" class="hidden"> 请填写联系方式，方便我们与您取得联系</span> </h3>
+          <input type="text" placeholder="邮箱、QQ或手机" name="contactInfo" class="grey" id="Jcontact" style="text-align: left;" maxlength="100"/>
+        </div>
+        <div class="submit">
+          <input type="button" id="submitButton" value="提 交" onmousedown="this.className = 'hover';" onmouseup="this.className = '';" />
+        </div>
+      </form>
+    </div>
+
+  </div>
 </div>
-
+<div>
+  <router-outlet></router-outlet>
+</div>
