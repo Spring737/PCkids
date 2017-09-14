@@ -1,41 +1,58 @@
 <nav class="navbar navbar-default" id="top1">
   <ul class="nav navbar-nav navbar-left">
     <li class="navbar-brand" id="brand">
-      <a routerLink="/index" routerLinkActive="active" style="color: #fe8a6a">Hello Baby</a>
+      <a onclick="location.reload()" routerLink="/index" routerLinkActive="active" style="color: #FF4F4F">Hello Baby</a>
     </li>
-    <li ><a routerLink="/parenting" routerLinkActive="active">
+    <li class=" "><a onclick="location.reload()" routerLink="/parenting" routerLinkActive="active" >
       <i class="fa fa-life-ring"></i> &nbsp;育儿知识</a>
     </li>
-    <li><a routerLink="/good-shop" routerLinkActive="active">
+    <li class=""><a onclick="location.reload()" routerLink="/good-shop" routerLinkActive="active">
       <i class="fa fa-ravelry "></i> &nbsp;母婴生活</a>
     </li>
   </ul>
+  <div class="navbar-header" style="margin-left: 50px">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   <ul class="nav navbar-nav navbar-right" style="margin-right: 80px">
-    <li><a href=""> <i class="fa fa-user-o"></i> &nbsp;个人中心</a></li>
-    <li><a href="">登录</a></li>
-    <li><a href="">注册</a></li>
+    <li><a onclick="location.reload()" href=""> <i class="fa fa-user-o"></i> &nbsp;个人中心</a></li>
+    <li><a routerLink="/login" routerLinkActive="active" href="">登录</a></li>
+    <li><a routerLink="/register" routerLinkActive="active" href="">注册</a></li>
   </ul>
-</nav>
-<div id="top2" >
+  </div>
+ </nav>
+<!--侧边导航-->
+ <div id="top2" >
   <ul class="top2-ul1">
+    <!--我的收藏-->
     <li class="dropdown setup-guides-dropdown">
       <a href="#" class="collect"><i class="fa fa-heart-o" ></i>
       </a>
     </li>
+    <!--母婴生活馆-->
     <li><a href="#" class="goods" data-toggle="modal" data-target="#goodsModal">
       <i class="fa fa-shopping-bag"></i></a></li>
     <li><a href="#" class="shore">
+      <!--分享-->
       <i class="fa fa-share-square-o"></i></a></li>
   </ul>
   <ul class="top2-ul2">
+    <!--意见反馈-->
     <li>
-      <a href="#" class="" data-toggle="modal" data-target="#feedbackModal">
-        <i class="fa fa-paper-plane-o"></i></a></li>
-
+      <a href="#" class="Feedback" data-toggle="modal" data-target="#feedbackModal">
+        <i class="fa fa-paper-plane-o"></i></a>
+    </li>
+<!--返回顶部-->
     <li><a href="javascript:scroll(0,0)">
       <i class="fa fa-arrow-up"></i></a></li>
   </ul>
 </div>
+<!--模态框-->
 <div id="goodsModal" class="modal fade " role="dialog">
   <div class="modalTop">
     <ul>
@@ -72,7 +89,7 @@
           <input type="text" placeholder="邮箱、QQ或手机" name="contactInfo" class="grey" id="Jcontact" style="text-align: left;" maxlength="100"/>
         </div>
         <div class="submit">
-          <input type="button" id="submitButton" value="提 交" onmousedown="this.className = 'hover';" onmouseup="this.className = '';" />
+          <input type="button" id="submitButton" value="提 交"/>
         </div>
       </form>
     </div>

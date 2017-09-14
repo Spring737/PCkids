@@ -1,3 +1,71 @@
-<p>
-  login works!
-</p>
+ <h1 id="logoname">HelloBoby</h1>
+  <div id="bgimg">
+  <div class="container">
+    <div class="row">
+      <form  #loginform="ngForm" class="form-horizontal col-md-6 col-lg-6 col-sm-12 col-xs-12 " id="login_from">
+
+        <div  id="daohang">
+          <div  [class.active]="tab_index==index" class="active col-lg-4 col-md-4 col-sm-3 col-xs-4 col-md-offset-2
+               col-lg-offset-2  col-sm-offset-3  col-xs-offset-2"
+                (click)="tab_index=index"   *ngFor="let ste of ster;let index=index"><a href="#">{{ste}}</a></div>
+        </div>
+
+        <div [ngSwitch]="tab_index">
+          <div *ngSwitchCase="0">
+            <div class="form-group">
+              <label for="telephone" class="col-sm-2 control-label name">账号</label>
+              <div class="col-sm-9 ">
+                <input type="text" #tel="ngModel" pattern="^1(3|4|5|7|8)\d{9}$" required [(ngModel)]="_telephone" class="form-control" id="telephone" name="telephone"  placeholder="请输入账号">
+              </div>
+            </div>
+            <div class="form-group">
+              <label  class="col-sm-2 control-label"></label>
+              <div *ngIf="tel.invalid && (tel.ng-dirty || tel.touched)" class="col-sm-9 text-danger"id="error_telephone">
+                <div *ngIf="tel.errors.required">
+                  <img src="{{jinggaoimg}}" alt="">号码不能为空
+                </div>
+                <div *ngIf="tel.errors.pattern">
+                  <img src="{{jinggaoimg}}" alt="">  请输入正确的手机号
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-sm-2 control-label name">密码</label>
+              <div class="col-sm-9 ">
+                <input type="password" #pass="ngModel" minlength="6" [(ngModel)]="_password" required class="form-control" id="password" name="password"  placeholder="请输入密码">
+              </div>
+            </div>
+            <div class="form-group">
+              <label  class="col-sm-2 control-label"></label>
+              <div *ngIf="pass.invalid && (pass.ng-dirty || pass.touched)" class="col-sm-9 text-danger" id="error_password">
+                <div *ngIf="pass.errors.required">
+                  <img src="{{jinggaoimg}}" alt="">  密码不能为空
+                </div>
+                <div *ngIf="pass.errors.minlength">
+                  <img src="{{jinggaoimg}}" alt="">  密码不能小于6位
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label  class="col-sm-2 control-label"></label>
+              <div class="col-sm-10 ">
+                <label><input type="checkbox"> 记住密码</label>
+                <a href="" class="col-lg-offset-5 col-md-offset-4 col-sm-offset-6 col-xs-offset-7"> 去注册...</a>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label  class="col-md-2 col-sm-2  control-label"></label>
+              <div type="button" (click)="toLogin(loginform)" class="col-md-9 col-sm-9 col-xs-12"  id="btn_login">登陆</div>
+
+            </div>
+          </div>
+          <div *ngSwitchCase="1">验证码登陆...</div>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,16 +1,17 @@
 #bgimg{
-  margin-top: -229px;
-  height: 930px;
+  margin: 0;
+  padding: 0;
   background:url("../../assets/imgs/loginregisterbg.jpg")center top no-repeat;
   font-size: 18px;
+  height: 1080px;
 }
 a:link{
   text-decoration: none
 }
-#login_from{
+#regist_form{
   background-color: rgba(255, 255, 255, 0.47);
   padding: 50px;
-  margin-top: 280px;
+  margin-top: 180px;
 }
 #daohang{
   margin-bottom: 50px;
@@ -26,25 +27,42 @@ a:link{
   height: 50px;
   margin-top: 5px;
 }
+#password_confirm{
+  font-size: 20px;
+  height: 50px;
+  margin-top: 5px;
+}
 .name{
   font-size: 18px;
   line-height: 50px;
 }
-.sre{
-  line-height: 20px;
+
+#btn_mybtn>div>button[type='button']{
+  width: 70px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
 }
-#btn_login{
+
+#btn_register{
+  width: 80px;
   height: 50px;
   font-size: 20px;
   color: white;
   background-color:  #fc736e;
-  border: none;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   line-height: 50px;
+  margin-top: 12px;
 }
 #logoname{
   color: white;
   font-size: 60px;
-  margin: 80px;
+
+}
+
+#loginto{
+  margin-top: 25px;
 }

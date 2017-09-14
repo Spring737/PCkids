@@ -8,6 +8,7 @@ import { GoodShopComponent } from './good-shop/good-shop.component';
 import { ParentingComponent } from './parenting/parenting.component';
 import { CannotFindComponent } from './cannot-find/cannot-find.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { ArticleDetailComponent } from './parenting/article-detail/article-detail.component';
 import { QuestionComponent } from './parenting/question/question.component';
 import { QuestionDetailComponent } from './parenting/question-detail/question-detail.component';
@@ -30,9 +31,13 @@ const routes: Routes = [
     component: ParentingComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'register',
+  component: RegisterComponent
   },
+  {
+  path: 'login',
+  component: LoginComponent
+},
   {
     path: '',
     redirectTo: '/index',
