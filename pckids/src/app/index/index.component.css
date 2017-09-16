@@ -1,8 +1,14 @@
 body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,button,input,textarea{
   margin:0;padding:0
 }
+.mainSlider{
+  height: 580px;
+  width: 100%;
+  /*border: solid 2px black;*/
+
+}
 #carousel-example-generic{
- position: absolute;
+ position: relative;
   left: 6.8%;
 }
 .carousel-inner{
@@ -25,7 +31,6 @@ body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,butto
   top: 100px;
   left: 5.7%;
 }
-
 #sliderImg{
   height: 600px;
   position: relative;
@@ -43,9 +48,9 @@ body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,butto
   /*border: solid 1px black;*/
 }
 .titleTxt{
-  position: relative;
-  top:600px;
-  left: 40%;
+  width: 500px;
+  height: 50px;
+  margin-left: 40%;
 }
 .titleTxt a{
   text-decoration: none;
@@ -70,11 +75,16 @@ body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,butto
   font-size: 32px;
   right: -20px;
 }
+.mainArticle{
+  height: 710px;
+  width: 100%;
+  /*border: solid 5px red;*/
+}
 .Article{
   /*height: 800px;*/
   /*border: solid 1px black;*/
   position: relative;
-  top:675px;
+  top:45px;
   left: 7%;
 }
 .Article .ArticleChart{
@@ -122,5 +132,26 @@ list-style: none;
 .Article .ArticleAd img{
   height: 100%;
   width: 100%;
+}
+#accordion{
+  position: absolute;
+  margin-top: 1350px;
+  height: 800px;
+  width: 500px;
+}
+
+footer{
+  height: 2px;
+  width: 100%;
+  /*border: solid 3px #EB4F38;*/
+  position: absolute;
+  bottom: 0;
+}
+footer .footer{
+  position: relative;
+  top:50px;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 149, 89, 0.31);
 }
 

@@ -1,3 +1,4 @@
+
 section{
   background: white;
   padding: 10px;
@@ -8,6 +9,18 @@ article{
 }
 .answer{
   margin: 10px;
-  border: solid 2px rgba(255, 100, 100, 0.29);
+  border: solid 2px rgba(255, 100, 100, 0.3);
   box-sizing: border-box;
 }
+.page_color:hover{
+  background:rgba(255, 100, 100, 0.69) ;
+  color: white;
+}
+.see_color{
+  background:rgba(255, 100, 100, 0.69) ;
+  color: white;
+}
+.text_color{
+  background:rgba(255, 100, 100, 0.69) ;
+}
+

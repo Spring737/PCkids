@@ -1,0 +1,15 @@
+article {
+  background: white;
+  margin-top: 30px;
+}
+.Q_side{
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.see_color{
+  background:rgba(255, 100, 100, 0.69) ;
+  color: white;
+}
+.text_color{
+  color:rgba(255, 100, 100, 0.69) ;
+}

@@ -1,17 +1,17 @@
 #bgimg{
-  margin: 0;
-  padding: 0;
-  background:url("../../assets/imgs/loginregisterbg.jpg")center top no-repeat;
+  background:url("../../assets/imgs/loginregisterbg.jpg")fixed center center no-repeat;
   font-size: 18px;
-  height: 1080px;
+  height: 768px;
+  background-size: cover;
+
 }
 a:link{
   text-decoration: none
 }
 #regist_form{
   background-color: rgba(255, 255, 255, 0.47);
-  padding: 50px;
-  margin-top: 180px;
+  padding: 40px;
+  margin-top: 100px;
 }
 #daohang{
   margin-bottom: 50px;
@@ -57,10 +57,10 @@ a:link{
   line-height: 50px;
   margin-top: 12px;
 }
-#logoname{
+#registername{
   color: white;
   font-size: 60px;
-
+  margin: 0;
 }
 
 #loginto{

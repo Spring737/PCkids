@@ -1,0 +1,189 @@
+
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading col-md-12 col-lg-12" role="tab" id="headingOne">
+        <h4 class="panel-title row" >
+          <a role="button" class="btn btn-lg see_color col-md-12 col-lg-12 " data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            寻求帮助
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <a type="button" class=" col-md-12 col-lg-12 h3  text-center text_color" data-toggle="modal" data-target="#myModal">
+            问专家
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading col-md-12 col-lg-12" role="tab" id="headingTwo">
+        <h4 class="panel-title row">
+          <a class="collapsed btn btn-lg see_color col-md-12 col-lg-12"  role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            我的问题
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+
+          <div class="panel-body list-group col-md-12 col-lg-12" style="background: white">
+            <h3 class="text-center text_color">您还没有问过问题哟！！！</h3>
+            <a href="#" class="list-group-item ">Cras justo odio</a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+            <ul class="pager ">
+              <li><a href="#">上一页</a></li>
+              <li><a href="#">下一页</a></li>
+            </ul>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!--模态框====================================================================-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title text-center" id="myModalLabel">写下你的问题</h3>
+          <div class="text-center">描述精确的问题更易得到解答</div>
+        </div>
+        <div class="modal-body">
+          <label for="optionsRadios1">问题类型(必选)</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              孕妇
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              幼儿
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+              1-3岁
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+              3-6岁
+            </label>
+          </div>
+          <label for="q_header">问题标题(必选)</label>
+          <textarea name="q_header" id="q_header" cols="2" rows="3" class="form-control" maxlength="50"
+                    placeholder="问题标题(不超过50字)" style=" resize : none"></textarea>
+          <label for="q_body">问题描述(可选)</label>
+          <textarea name="q_body" id="q_body" cols="10" rows="10" class="form-control" maxlength="200"
+                    placeholder="问题背景、条件等详细信息(不超过200字)" style=" resize : none"></textarea>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-default btn-lg " data-dismiss="modal">退出</button>
+          <button type="button" class="btn btn-info btn-lg " data-dismiss="modal">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--模态框====================================================================-->
+<article class="col-md-12 col-lg-12 text-muted">
+  <div class="see_color row">
+    <h4 class="text-center ">
+      100%专家在线权威在线
+    </h4>
+    <p class="text-center  h4">随时随地有问必答</p>
+  </div>
+  <br>
+  <div class="col-md-12 col-lg-12">
+    <div class="list-group">
+      <a href="#" class="list-group-item ">
+        <h4 class="list-group-item-heading text_color text-center">徐燕芳</h4>
+        <br>
+        <p class="list-group-item-text">
+          儿科&nbsp;&nbsp;&nbsp;&nbsp; 暨南大学附属第一医院
+        </p>
+        <hr>
+        <p class="list-group-item-text">
+          护士长 &nbsp;&nbsp;&nbsp;&nbsp; 为幼儿护理等提供具有个性化特点的健康教育指导。
+        </p>
+
+      </a>
+    </div>
+
+    <div class="list-group">
+      <a href="#" class="list-group-item ">
+        <h4 class="list-group-item-heading text_color text-center">李春荣</h4>
+        <br>
+        <p class="list-group-item-text">
+          儿科&nbsp;&nbsp;&nbsp;&nbsp; 深圳和美妇儿科医院
+        </p>
+        <hr>
+        <p class="list-group-item-text">
+          主治医师 &nbsp;&nbsp;&nbsp;&nbsp;
+          从事儿科临床工作20余年，对儿科常见病、新生儿疾病方面有着丰富的临床经验，能很好的与儿童沟通，保障儿童健康。
+        </p>
+
+      </a>
+    </div>
+
+    <div class="list-group">
+      <a href="#" class="list-group-item ">
+
+        <h4 class="list-group-item-heading text_color text-center"> 徐玉苑 </h4>
+        <br>
+        <p class="list-group-item-text">
+          妇产科&nbsp;&nbsp;&nbsp;&nbsp; 暨南大学附属第一医院
+        </p>
+        <hr>
+        <p class="list-group-item-text">
+          爱婴区护士长 &nbsp;&nbsp;&nbsp;&nbsp; 主管护师；拥有丰富的母婴临床护理经验。
+        </p>
+
+      </a>
+    </div>
+
+    <div class="list-group">
+      <a href="#" class="list-group-item ">
+
+
+        <h4 class="list-group-item-heading text_color text-center">邓敏端</h4>
+        <br>
+        <p class="list-group-item-text">
+          妇儿科&nbsp;&nbsp;&nbsp;&nbsp; 广州市红十字会医院
+        </p>
+        <hr>
+        <p class="list-group-item-text">
+          副主任医师 &nbsp;&nbsp;&nbsp;&nbsp; 医学硕士，擅长妇科内分泌疾病、月经病、不孕症、习惯性流产及妇科炎症诊治，阴道镜检查，宫颈病变早期诊治，围绝经期保健。
+        </p>
+
+      </a>
+    </div>
+  </div>
+
+
+</article>
+<article class="col-md-12 col-lg-12 text-muted" >
+  <header class="col-md-12 col-lg-12 text_color" style="border-bottom: solid 1px rgba(255, 100, 100, 0.69)">
+    <h4 class="text-center">联系我们</h4>
+  </header>
+  <hr>
+  <br>
+  <p>如果您是医生或是医疗机构，希望参与“专家在线”，欢迎随时与我们联系。</p>
+  <p>联系人：丁笑</p>
+  <p>电话：020-38178288-4256</p>
+  <p>邮箱：dingxiao#pcbaby.com.cn（#改@</p>
+  <br>
+</article>
+
+
+

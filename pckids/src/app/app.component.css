@@ -1,32 +1,34 @@
-
 #brand {
   font-size: 2.2em;
   margin-top: -15px;
 }
+.navbar{
+  background-color: rgba(225, 225, 225, 0.5);
+}
+.navbar-default{
 
+}
 #nav-right {
   margin-right: 100px;
 }
-
 #top1 {
   position: fixed;
   width: 100%;
   z-index: 5;
   font-size: 1.1em;
-  /*background-color: rgb(255, 217, 206);*/
-  /*border-color: rgb(255, 217, 206);*/
-  background-color: #cacaca;
+ /*kground-color: #cacaca;*!*/
 }
-
 #top2 {
   height: 735px;
+  min-height: 500px;
   width: 2.5%;
   right: 0;
   background-color: #ffffff;
   position: fixed;
+  float: right;
+  z-index: 2;
+  bottom: 0;
 }
-
-
 .top2-ul1 {
   /*margin-top: 180px;*/
   height: 300px;
@@ -103,7 +105,6 @@
   height: 55px;
   position: relative;
 }
-
 .top2-ul2 li a {
   color: #575757;
   line-height: 35px;
@@ -133,7 +134,6 @@
   float: right;
   margin-right: 1.5%;
 }
-
 .modalTop ul {
   width: 510px;
   height: 720px;
@@ -142,7 +142,6 @@
   list-style: none;
   overflow: auto;
 }
-
 .modalTop ul li {
   height: 100px;
   width: 450px;
@@ -156,9 +155,7 @@
   border: none;
   color: #fc736e;
   font-size: 32px;
-
 }
-
 .goodsImg {
   float: left;
 }
@@ -257,7 +254,6 @@
   height: 180px;
   overflow: hidden;
 }
-
 .fbCont .report textarea {
   width: 940px;
   resize: none;
@@ -294,7 +290,6 @@
 
   background: #f44;
   border: none;
-  font-family: "Microsoft YaHei";
 }
 
 .fbCont .submit .hover {
@@ -305,3 +300,45 @@
 .fbCont .contact .grey {
   color: #bcbcbc;
 }
+
+
+html body{
+  height: 100%;
+}
+#LiBox{
+display: none;
+}
+#LiBox1{
+  display: none;
+}
+#LiBox ul{
+  list-style: none;
+}
+#LiBox ul li,#LiBox1 ul li{
+  padding: 5px;
+}
+#LiBox ul li a{
+    text-decoration: none;
+    color: #575757;
+  width: 50px;
+  height: 30px;
+  /*border: solid 1px red;*/
+
+  }
+#LiBox1 ul{
+  list-style: none;
+}
+#LiBox1 ul li a{
+  text-decoration: none;
+  color: #575757;
+}
+#LiBox ul li a:hover{
+  color: #fc736e;
+}
+#LiBox1 ul li a:hover{
+  color: #fc736e;
+}
+.nav .NavFirst{
+  width: 200px;
+}
+

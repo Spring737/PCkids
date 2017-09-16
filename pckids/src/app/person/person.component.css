@@ -1,0 +1,126 @@
+h4,p{
+  margin: 0;
+  padding: 0;
+}
+#mybody{
+  margin: 0;
+  padding: 0;
+}
+.content {
+    width: 978px;
+    margin: 0 auto;
+  background: #E2F4F7;
+    border: 1px #f1f1f1 solid;
+}
+.userhead{
+  margin-top: 82px;
+}
+.u_headbg{
+  height: 163px;
+  background: url("../../assets/imgs/personheadbg.jpg")  no-repeat center;
+}
+#person{
+  height: 180px;
+  position: relative;
+}
+
+/*===============================================================================*/
+#headso1{
+  margin-top: -50px;
+  margin-left: 32px;
+  float: left;
+}
+#headimg{
+  width: 170px;
+  height: 170px;
+  border: 1px solid #d7d7d7;
+}
+.inpfile{
+  display: block;
+  margin-top: 11px;
+  width: 170px;
+  height: 40px;
+  opacity: 0;
+}
+.xiv{
+  width: 170px;
+  height: 40px;
+  background-color: #fc736e;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
+}
+/*===============================================================================*/
+#headso2{
+  float: right;
+  width: 770px;
+  height: 170px;
+  padding: 10px 30px;
+}
+.headso2_con{
+  width: 100%;
+  margin-top: 15px;
+}
+.con{
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------*/
+.userbottom{
+  border-top: 3px solid white;
+}
+.left_menu{
+  padding: 0;
+  border-right: 3px solid white;
+}
+.p_son{
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.p_son p{
+  height: 40px;
+  line-height: 40px;
+}
+
+/*------------------------------------------------------*/
+.left_message{
+  margin: 20px;
+  padding: 20px;
+}
+
+.left_message .hrs{
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 255, 0.5);
+
+}
+.left_message .spanhrs{
+  padding-bottom: 1px;
+  border-bottom: 2px solid #FC736E;
+}
+
+.form_input{
+  margin: 20px 0;
+}
+
+.myarea{
+  margin: 12px;
+  max-height: 8pc;
+  min-height: 8pc;
+  max-width: 95%;
+  min-width: 95%;
+}
+.keep_btn{
+  margin: 10px;
+}
+.cliary{
+  margin-top: 20px;
+  padding: 0;
+  border: 1px solid #FC736E;
+}

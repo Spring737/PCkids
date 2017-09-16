@@ -5,30 +5,26 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { GoodShopComponent } from './good-shop/good-shop.component';
-import {ParentingComponent } from './parenting/parenting.component';
 import { CannotFindComponent } from './cannot-find/cannot-find.component';
-import { ArticleDetailComponent } from './parenting/article-detail/article-detail.component';
-import { QuestionComponent } from './parenting/question/question.component';
-import { QuestionDetailComponent } from './parenting/question-detail/question-detail.component';
 import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from './app-routing.module';
+import {ParentingModule} from './parenting/parenting.module';
 import { RegisterComponent } from './register/register.component';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     GoodShopComponent,
-    ParentingComponent,
     CannotFindComponent,
-    ArticleDetailComponent,
-    QuestionComponent,
-    QuestionDetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PersonComponent,
   ],
   imports: [
     BrowserModule,
+    ParentingModule,
     AppRoutingModule,
     FormsModule
   ],

@@ -1,0 +1,12 @@
+
+<div class="col-md-12 col-lg-12" style="padding-top: 20px;box-sizing: border-box">
+  <form class="form-inline">
+
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="sText" id="article_search" name="article_search"
+             placeholder="文章名/作者/类型">
+      <!--{{sText}}-->
+    </div>
+    <a type="submit" class="btn search_color" (click)="article_search(sText)">Search</a>
+  </form>
+</div>

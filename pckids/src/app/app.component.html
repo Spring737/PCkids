@@ -1,101 +1,137 @@
-<nav class="navbar navbar-default" id="top1">
-  <ul class="nav navbar-nav navbar-left">
-    <li class="navbar-brand" id="brand">
-      <a onclick="location.reload()" routerLink="/index" routerLinkActive="active" style="color: #FF4F4F">Hello Baby</a>
-    </li>
-    <li class=" "><a onclick="location.reload()" routerLink="/parenting" routerLinkActive="active" >
-      <i class="fa fa-life-ring"></i> &nbsp;育儿知识</a>
-    </li>
-    <li class=""><a onclick="location.reload()" routerLink="/good-shop" routerLinkActive="active">
-      <i class="fa fa-ravelry "></i> &nbsp;母婴生活</a>
-    </li>
-  </ul>
-  <div class="navbar-header" style="margin-left: 50px">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  <ul class="nav navbar-nav navbar-right" style="margin-right: 80px">
-    <li><a onclick="location.reload()" href=""> <i class="fa fa-user-o"></i> &nbsp;个人中心</a></li>
-    <li><a routerLink="/login" routerLinkActive="active" href="">登录</a></li>
-    <li><a routerLink="/register" routerLinkActive="active" href="">注册</a></li>
-  </ul>
-  </div>
- </nav>
-<!--侧边导航-->
- <div id="top2" >
-  <ul class="top2-ul1">
-    <!--我的收藏-->
-    <li class="dropdown setup-guides-dropdown">
-      <a href="#" class="collect"><i class="fa fa-heart-o" ></i>
-      </a>
-    </li>
-    <!--母婴生活馆-->
-    <li><a href="#" class="goods" data-toggle="modal" data-target="#goodsModal">
-      <i class="fa fa-shopping-bag"></i></a></li>
-    <li><a href="#" class="shore">
-      <!--分享-->
-      <i class="fa fa-share-square-o"></i></a></li>
-  </ul>
-  <ul class="top2-ul2">
-    <!--意见反馈-->
-    <li>
-      <a href="#" class="Feedback" data-toggle="modal" data-target="#feedbackModal">
-        <i class="fa fa-paper-plane-o"></i></a>
-    </li>
-<!--返回顶部-->
-    <li><a href="javascript:scroll(0,0)">
-      <i class="fa fa-arrow-up"></i></a></li>
-  </ul>
-</div>
-<!--模态框-->
-<div id="goodsModal" class="modal fade " role="dialog">
-  <div class="modalTop">
-    <ul>
-      <li class="goodsTitle">
-        <i class="fa fa-shopping-basket fa-2x">
-        </i>&nbsp;&nbsp;&nbsp;好货分享</li>
-      <li>
-        <div class="goodsImg"><img src="../assets/images/goods1.jpg"/></div>
-        <div class="goodsDes">
-          <p><a href="">Quinny 奎尼 Zapp Xtra 儿童推车 </a></p>
-          <p><span class="prise">￥  1299</span></p>
-          <p><a href=""><span class="fa fa-heart-o fa-0.8x">&nbsp;&nbsp;喜欢(888)</span></a></p>
+ <nav class="navbar navbar-default" id="top1">
+    <ul class="nav navbar-nav navbar-left" id="MyUl">
+      <li class="navbar-brand" id="brand">
+        <a onclick="location.reload()" routerLink="/index" routerLinkActive="active" style="color: #FF4F4F">Hello Baby</a>
+      </li>
+      <li class="NavFirst" onclick="location.reload()" onmouseout="$('#LiBox').css('display','none')" onmouseover="$('#LiBox').css('display','block')">
+        <a  routerLink="/parenting" routerLinkActive="active"  >
+        <i class="fa fa-life-ring" ></i> &nbsp;育儿知识
+        </a>
+        <div id="LiBox">
+          <ul>
+            <li>
+              <a href="">备孕</a>
+              <a href="">&nbsp;&nbsp;&nbsp;孕期</a>
+              <a href="">&nbsp;&nbsp;&nbsp;分娩</a>
+            </li>
+            <li>
+              <a href="">0-1岁&nbsp;&nbsp;&nbsp;</a>
+              <a href="">1-3岁&nbsp;&nbsp;&nbsp;</a>
+              <a href="">3-6岁</a>
+            </li>
+
+          </ul>
         </div>
       </li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li onmouseout="$('#LiBox1').css('display','none')" onmouseover="$('#LiBox1').css('display','block')">
+        <a onclick="location.reload()" routerLink="/good-shop" routerLinkActive="active">
+        <i class="fa fa-ravelry "></i> &nbsp;母婴生活</a>
+        <div id="LiBox1" >
+          <ul style="float: left">
+            <li><a href="">宝妈精选</a></li>
+            <li><a href="">生活帮手</a></li>
+          </ul>
+        </div>
+      </li>
     </ul>
-  </div>
-</div>
-<div id="feedbackModal" class="modal fade" role="dialog">
-  <div class="feedback">
-  <h2><span>意见反馈与错误报告</span></h2>
-    <div class="fbCont" id="submitDiv">
-      <form id="postform" action="" method="post">
 
-        <div class="report">
-          <h3> <span class="tit">问题描述或意见反馈</span><i class="note" style="color: red">*</i> <span id="Jnote1" class="hidden"> 请填写正确内容和问题表述</span> </h3>
-          <textarea name="reportContent"rows="6"id="Jreport"maxlength="1500"></textarea>
-        </div>
-        <div class="contact">
-          <h3 class="w94"> <span class="tit">您的联系方式</span><i class="note" style="color: red">*</i> <span id="Jnote2" class="hidden"> 请填写联系方式，方便我们与您取得联系</span> </h3>
-          <input type="text" placeholder="邮箱、QQ或手机" name="contactInfo" class="grey" id="Jcontact" style="text-align: left;" maxlength="100"/>
-        </div>
-        <div class="submit">
-          <input type="button" id="submitButton" value="提 交"/>
-        </div>
-      </form>
+    <div class="navbar-header" style="margin-left: 50px">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 80px">
+        <li><a onclick="location.reload()" routerLink="/person" routerLinkActive="active"> <i class="fa fa-user-o"></i> &nbsp;个人中心</a></li>
+        <li><a routerLink="/login" routerLinkActive="active" onclick="$('#top1,#top2').css('display','none')" >登录</a></li>
+        <li><a  routerLink="/register" routerLinkActive="active" onclick="$('#top1,#top2').css('display','none')">注册</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--侧边导航-->
+  <div id="top2" >
+    <div class="topRight">
+      <ul class="top2-ul1">
+        <!--我的收藏-->
+        <li class="dropdown setup-guides-dropdown">
+          <a href="#" class="collect"><i class="fa fa-heart-o" ></i>
+          </a>
+        </li>
+        <!--母婴生活馆-->
+        <li><a href="#" class="goods" data-toggle="modal" data-target="#goodsModal">
+          <i class="fa fa-shopping-bag"></i></a></li>
+        <li><a href="#" class="shore">
+          <!--分享-->
+          <i class="fa fa-share-square-o"></i></a></li>
+      </ul>
+      <ul class="top2-ul2">
+        <!--意见反馈-->
+        <li>
+          <a href="#" class="Feedback" data-toggle="modal" data-target="#feedbackModal">
+            <i class="fa fa-paper-plane-o"></i></a>
+        </li>
+        <!--返回顶部-->
+        <li><a href="javascript:scroll(0,0)">
+          <i class="fa fa-arrow-up"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--模态框-->
+  <div id="goodsModal" class="modal fade " role="dialog">
+    <div class="modalTop">
+      <ul>
+        <li class="goodsTitle">
+          <i class="fa fa-shopping-basket fa-2x">
+          </i>&nbsp;&nbsp;&nbsp;好货分享</li>
+        <li>
+          <div class="goodsImg"><img src="../assets/images/goods1.jpg"/></div>
+          <div class="goodsDes">
+            <p><a href="">Quinny 奎尼 Zapp Xtra 儿童推车 </a></p>
+            <p><span class="prise">￥  1299</span></p>
+            <p><a href=""><span class="fa fa-heart-o fa-0.8x">&nbsp;&nbsp;喜欢(888)</span></a></p>
+          </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div id="feedbackModal" class="modal fade" role="dialog">
+    <div class="feedback">
+      <h2><span>意见反馈与错误报告</span></h2>
+      <div class="fbCont" id="submitDiv">
+        <form id="postform" action="" method="post">
+
+          <div class="report">
+            <h3> <span class="tit">问题描述或意见反馈</span><i class="note" style="color: red">*</i> <span id="Jnote1" class="hidden"> 请填写正确内容和问题表述</span> </h3>
+            <textarea name="reportContent"rows="6"id="Jreport"maxlength="1500"></textarea>
+          </div>
+          <div class="contact">
+            <h3 class="w94"> <span class="tit">您的联系方式</span><i class="note" style="color: red">*</i> <span id="Jnote2" class="hidden"> 请填写联系方式，方便我们与您取得联系</span> </h3>
+            <input type="text" placeholder="邮箱、QQ或手机" name="contactInfo" class="grey" id="Jcontact" style="text-align: left;" maxlength="100"/>
+          </div>
+          <div class="submit">
+            <input type="button" id="submitButton" value="提 交"/>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!--网页主体-->
+  <div class="main">
+
+    <router-outlet></router-outlet>
 
   </div>
-</div>
-<div>
-  <router-outlet></router-outlet>
-</div>
+
+
+
+
+

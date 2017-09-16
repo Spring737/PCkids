@@ -11,8 +11,8 @@ export class RegisterComponent implements OnInit {
   jinggaoimg= '../../assets/imgs/error.png';
   _telephone= '13137025875';
   _password= '123456';
-  _passwordcon= '123456';
-  res= [ '备孕期', '怀孕期', '育儿期'];
+  _passwordcon= '123456'
+  res= [ '备孕期', '怀孕期', '育儿期']
   constructor() { }
 
   ngOnInit() {

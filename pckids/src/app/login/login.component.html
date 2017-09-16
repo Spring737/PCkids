@@ -1,5 +1,6 @@
- <h1 id="logoname">HelloBoby</h1>
+
   <div id="bgimg">
+    <div id="logoname">HelloBoby</div>
   <div class="container">
     <div class="row">
       <form  #loginform="ngForm" class="form-horizontal col-md-6 col-lg-6 col-sm-12 col-xs-12 " id="login_from">
@@ -51,7 +52,7 @@
               <label  class="col-sm-2 control-label"></label>
               <div class="col-sm-10 ">
                 <label><input type="checkbox"> 记住密码</label>
-                <a href="" class="col-lg-offset-5 col-md-offset-4 col-sm-offset-6 col-xs-offset-7"> 去注册...</a>
+                <a routerLink="/register" routerLinkActive="active" class="col-lg-offset-5 col-md-offset-4 col-sm-offset-6 col-xs-offset-7"> 还没有账号？</a>
               </div>
             </div>
 
