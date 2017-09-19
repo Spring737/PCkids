@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/pckids" libraries="{亲子网/pckids/node_modules}" />
+    <file url="PROJECT" libraries="{亲子网/pckids/node_modules}" />
+  </component>
+</project>

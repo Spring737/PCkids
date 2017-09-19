@@ -1,0 +1,24 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\node.exe',
+1 verbose cli   'E:\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 warn invalid config registry="'https://re/registry.npm.taobao.org'"
+5 warn invalid config Must be a full url with 'http://'
+6 verbose stack Error: ENOENT: no such file or directory, open 'E:\魏春敏\亲子网\package.json'
+6 verbose stack     at Error (native)
+7 verbose cwd E:\魏春敏\亲子网
+8 error Windows_NT 10.0.14393
+9 error argv "E:\\node.exe" "E:\\node_modules\\npm\\bin\\npm-cli.js" "start"
+10 error node v6.11.2
+11 error npm  v3.10.10
+12 error path E:\魏春敏\亲子网\package.json
+13 error code ENOENT
+14 error errno -4058
+15 error syscall open
+16 error enoent ENOENT: no such file or directory, open 'E:\魏春敏\亲子网\package.json'
+17 error enoent ENOENT: no such file or directory, open 'E:\魏春敏\亲子网\package.json'
+17 error enoent This is most likely not a problem with npm itself
+17 error enoent and is related to npm not being able to find a file.
+18 verbose exit [ -4058, true ]

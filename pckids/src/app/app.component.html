@@ -11,8 +11,8 @@
           <ul>
             <li>
               <a href="">备孕</a>
-              <a href="">&nbsp;&nbsp;&nbsp;孕期</a>
-              <a href="">&nbsp;&nbsp;&nbsp;分娩</a>
+              <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;孕期</a>
+              <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分娩</a>
             </li>
             <li>
               <a href="">0-1岁&nbsp;&nbsp;&nbsp;</a>
@@ -28,8 +28,10 @@
         <i class="fa fa-ravelry "></i> &nbsp;母婴生活</a>
         <div id="LiBox1" >
           <ul style="float: left">
-            <li><a href="">宝妈精选</a></li>
-            <li><a href="">生活帮手</a></li>
+            <li><a href="">孕产专区</a></li>
+            <li><a href="">营养辅食</a></li>
+            <li><a href="">喂养用品</a></li>
+            <li><a href="">洗护用品</a></li>
           </ul>
         </div>
       </li>
@@ -56,8 +58,8 @@
     <div class="topRight">
       <ul class="top2-ul1">
         <!--我的收藏-->
-        <li class="dropdown setup-guides-dropdown">
-          <a href="#" class="collect"><i class="fa fa-heart-o" ></i>
+        <li class="" data-toggle="modal" data-target="#collectModal">
+          <a class="collect"><i class="fa fa-heart-o" ></i>
           </a>
         </li>
         <!--母婴生活馆-->
@@ -74,12 +76,13 @@
             <i class="fa fa-paper-plane-o"></i></a>
         </li>
         <!--返回顶部-->
-        <li><a href="javascript:scroll(0,0)">
+        <li><a onclick="{$('html,body').animate({scrollTop: '0px'}, 1000);};  ">
           <i class="fa fa-arrow-up"></i></a></li>
       </ul>
     </div>
   </div>
   <!--模态框-->
+ <!--1、母婴生活馆-->
   <div id="goodsModal" class="modal fade " role="dialog">
     <div class="modalTop">
       <ul>
@@ -98,9 +101,12 @@
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </div>
   </div>
+ <!--2、意见反馈-->
   <div id="feedbackModal" class="modal fade" role="dialog">
     <div class="feedback">
       <h2><span>意见反馈与错误报告</span></h2>
@@ -123,7 +129,12 @@
 
     </div>
   </div>
+ <!--3、我的收藏-->
+ <div id="collectModal" class="modal fade" role="dialog">
+      <div class="collectModal">
 
+      </div>
+ </div>
   <!--网页主体-->
   <div class="main">
 

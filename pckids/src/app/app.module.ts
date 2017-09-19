@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {ParentingModule} from './parenting/parenting.module';
 import { RegisterComponent } from './register/register.component';
 import { PersonComponent } from './person/person.component';
+import { GoodsDetailComponent } from './goods-detail/goods-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PersonComponent } from './person/person.component';
     LoginComponent,
     RegisterComponent,
     PersonComponent,
+    GoodsDetailComponent,
   ],
   imports: [
     BrowserModule,

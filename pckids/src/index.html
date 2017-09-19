@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
 
 
+
 </head>
 <body>
 <div class="Main">
@@ -26,6 +27,68 @@
   <script src="assets/zan.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script>
+  var i=1;
+
+  function zan() {
+    var num=document.getElementById('num');
+    if(i%2!=0){
+      num.innerHTML++
+      var c=document.getElementById('c')
+      c.innerHTML='取消赞'
+    }
+    if(i%2==0){
+      num.innerHTML--;
+      var c=document.getElementById('c')
+      c.innerHTML='赞'
+    }
+    i++
+  }
+  function getCode(n) {
+    var all = "azxcvbnmsdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP0123456789";
+    var b = "";
+    for (var i = 0; i < n; i++) {
+      var index = Math.floor(Math.random() * 62);
+      b += all.charAt(index);
+
+    }
+    return b;
+  };
+
+  function change() {
+    document.getElementById("login").innerHTML = getCode(4);
+
+  }
+
+
+function show () {
+
+  var nav1=document.getElementById('title1');
+  var nav2=document.getElementById('title2');
+
+  nav1.onmouseover=function () {
+      nav1.style.backgroundColor='red';
+      nav1.style.color='white';
+      nav2.style.backgroundColor='white';
+      nav2.style.color='red';
+
+      $('.MainAll').css('float','left')
+  };
+  nav2.onmouseover=function () {
+    nav1.style.backgroundColor='white';
+    nav1.style.color='red';
+    nav2.style.backgroundColor='red';
+    nav2.style.color='white';
+    $('.MainAll').css('float','right')
+  }
+}
+
+  window.onload = function () {
+    show();
+    change();
+
+  };
+</script>
 </body>
 
 </html>

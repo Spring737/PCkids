@@ -88,7 +88,7 @@ body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,butto
   left: 7%;
 }
 .Article .ArticleChart{
-  height: 651px;
+  height: 635px;
   border: solid 1px #c4c4c4;
   background-color: #fff;
 }
@@ -99,7 +99,7 @@ list-style: none;
   height: 175px;
   border:none;
   border-bottom: dotted 1px #bcbcbc;
-  margin: 25px auto;
+  margin: 22px auto;
 }
 .Article .ArticleChart ul li img{
   height: 100%;
@@ -127,11 +127,13 @@ list-style: none;
 }
 .Article .ArticleAd{
   height: 651px;
-  /*border: solid 1px red;*/
+
 }
 .Article .ArticleAd img{
   height: 100%;
   width: 100%;
+  border: solid 5px #ffffff;
+  margin-top: 3px;
 }
 #accordion{
   position: absolute;
@@ -139,6 +141,327 @@ list-style: none;
   height: 800px;
   width: 500px;
 }
+.mainArticle2{
+  height: 300px;
+  width: 100%;
+  /*border: solid 1px red;*/
+}
+.MA2{
+  height: 300px;
+  /*border: solid 2px black;*/
+  margin-left:7%;
+}
+.MA2-1{
+  background-color: #fff;
+  height: 300px;
+  border: solid 1px #b9b9b9;
+
+}
+.MA2nav{
+  height: 35px;
+  /*border: solid 1px red;*/
+}
+.MA2title{
+  font-size: 1.3em;
+  color: #FF4F4F;
+  position: absolute;
+  margin-top: 5px;
+}
+.MA2nav-1{
+  height: 30px;
+  width: 300px;
+  /*background-color: red;*/
+  float: right;
+}
+.MA2nav-1 ul {
+  height: 35px;
+  width: 250px;
+  /*background-color: #ff8589;*/
+  border-bottom: solid 2px #b9b9b9;
+}
+.MA2nav-1 ul li{
+  height: 30px;
+  width: 50px;
+  margin-top: 5px;
+  line-height: 30px;
+  text-align: center;
+  list-style: none;
+  float: right;
+  margin-right: 20px;
+
+}
+.MA2nav-1 ul li:hover{
+  color: #EB4F38;
+  opacity: 1;
+  border-bottom: solid 2px #EB4F38;
+}
+.MA2info{
+  position: relative;
+  top: 5px;
+  height: 242px;
+   /*border: solid 1px #cfcfcf;*/
+}
+.MA2info .Img{
+  width: 60%;
+  float: left;
+  margin-left: -15px;
+}
+.InfoMain{
+  height: 242px;
+  width: 42%;
+  float:right;
+  margin-top: 10px;
+}
+.InfoMain a{
+  text-decoration: none;
+  color: #575757;
+}
+.InfoMain p{
+  line-height: 35px;
+}
+.InfoMain .MA2title-1{
+  font-size: 1.3em;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.InfoMain .MA2title-1:hover{
+ color: #EB4F38;
+}
+.mainArticle2 .MA3 .MA3-1{
+  height: 300px;
+  background-color: #fff;
+  border: solid 1px #b9b9b9;
+}
+.mainArticle2 .MA3 .MA3-1 .MA3nav{
+  height: 55px;
+  width: 100%;
+  background-color: #ff8589;
+
+}
+.mainArticle2 .MA3 .MA3-1 .MA3nav p{
+  position: relative;
+  left: 40px;
+  font-size: 1.5em;
+  color: #ffffff;
+
+  line-height: 55px;
+}
+.MA3 .MA3-1 .MA3main ul{
+  margin-left: 40px;
+}
+.MA3 .MA3-1 .MA3main ul li{
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2em;
+}
+.MA3 .MA3-1 .MA3main ul li a{
+
+  color: #575757;
+}
+.MA3 .MA3-1 .MA3main ul li a:hover{
+  color: #ff655b;
+}
+
+.MA3 .MA3-1 .MA3main{
+  height: 240px;
+  width: 100%;
+  position: relative;
+  left: 20px;
+  /*background-color: #ff8589;*/
+}
+.mainArticle3{
+  height:680px;
+  width: 100%;
+
+  /*border: solid 1px red;*/
+ }
+.mainArticle3 .MA3{
+  margin-top: 30px;
+  height: 650px;
+  /*border: solid 2px red;*/
+  margin-left: 7%;
+
+}
+.mainArticle3 .MA3 .MA3-1{
+  height: 600px;
+  width: 98.6%;
+  background-color: #fff;
+}
+
+.mainArticle3 .MA3 .MA3Title{
+  height: 55px;
+  border-bottom: solid 1px #c1c1c1;
+}
+.mainArticle3 .MA3 .MA3Title p{
+  line-height: 55px;
+  font-size: 1.3em;
+  margin-left: 35px;
+  color: #ff655b;
+}
+.MA3Left{
+  height: 540px;
+}
+.MA3Left .img{
+  margin-top: 15px;
+  float: left;
+}
+.MA3Left .img img{
+  width: 100%;
+  height: 100%;
+}
+.MA3Left .MA3Info{
+  height: 350px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  width:60% ;
+}
+.MA3Left .MA3Info ul{
+  list-style: none;
+}
+.MA3Left .MA3Info ul .mainA-1{
+  height: 120px;
+  width: auto;
+  border-bottom: solid 1px #bcbcbc;
+}
+.MA3Left .MA3Info ul li .title{
+
+  font-size: 1.3em;
+  margin-top: 15px;
+  text-align: center;
+}
+.MA3Left .MA3Info ul li .title a{
+  text-decoration: none;
+  color: #575757;
+}
+.MA3Left .MA3Info ul li .title a:hover{
+  color: #ff655b;
+}
+.MA3Left .MA3Info ul li .main{
+  height: 50px;
+  width: 80%;
+  margin-left: 40px;
+  margin-top: 15px;
+  text-align: left;
+  color: #747474;
+}
+.MA3Left .MA3Info ul li i{
+  color: red;
+}
+.MA3Left .MA3Info ul li .mainB{
+  margin-left: 15px;
+  font-size: 1.1em;
+
+}
+.MA3Left .MA3Info ul li a{
+  color: #575757;
+}
+.MA3Left .MA3Info ul li a:hover{
+  color: #ff655b;
+}
+.MA3Left .MA3Info ul li .mainB .mainB-1{
+  float: left;
+  margin-left: 25px;
+}
+.MA3Left .MA3Info ul li .mainB .mainB-2{
+  float: right;
+  margin-right: 60px;
+}
+
+.MA3Right{
+  height: 540px;
+ /*border: solid 1px blueviolet;*/
+  /*background-color: #fff;*/
+}
+
+.MA3RightNav{
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+
+}
+.MA3RightNav .Nav1{
+  border-right: solid 2px white;
+  height: 50px;
+  width: 50%;
+  float: left;
+}
+
+.MA3RightNav .Nav1 #title1{
+  background-color: red;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+.MA3RightNav .Nav2{
+  height: 50px;
+  width: 50%;
+  float: left;
+}
+
+
+.MA3RightNav .Nav1, .Nav2 #title2 {
+  text-align: center;
+  line-height: 50px;
+  color: red;
+
+}
+.MA3Right .MA3RightMain{
+  height: 480px;
+  width:90%;
+  margin-left: 5%;
+  /*background-color: #ff9559;*/
+  overflow: hidden;
+}
+
+.MA3Right .MA3RightMain .MainAll{
+  width: 200%;
+  height: 480px;
+  /*border: solid 1px red;*/
+  float: left;
+}
+
+.MA3Right .MA3RightMain .MainAll .MainAllLeft{
+  float: left;
+  width: 50%;
+  height: 480px;
+  /*background-color: #ff8589;*/
+}
+.MA3Right .MA3RightMain .MainAll .MainAllLeft .Main1 a li{
+  margin-top: 8px;
+}
+.MA3Right .MA3RightMain .MainAll .MainAllLeft .Main1 a li .title{
+  font-size: 1.2em;
+}
+.MA3Right .MA3RightMain .MainAll .MainAllLeft .Main1 a li .title:hover{
+  color: #EB4F38;
+}
+
+.MA3Right .MA3RightMain .MainAll .MainAllRight .Main2 a li{
+    list-style: none;
+  margin-top: 8px;
+  }
+.MA3Right .MA3RightMain .MainAll .MainAllRight .Main2 a li .title{
+  font-size: 1.2em;
+}
+.MA3Right .MA3RightMain .MainAll .MainAllRight .Main2 a li .title:hover{
+  color: #EB4F38;
+}
+
+.MA3Right .MA3RightMain .MainAll .MainAllLeft .Main1 a{
+  color: #575757;
+  text-decoration: none;
+}
+.MA3Right .MA3RightMain .MainAll .MainAllRight .Main2 a{
+  color: #575757;
+  text-decoration: none;
+}
+
+
+
 
 footer{
   height: 2px;
@@ -150,8 +473,85 @@ footer{
 footer .footer{
   position: relative;
   top:50px;
-  height: 300px;
+  height: 460px;
   width: 100%;
-  background-color: rgba(255, 149, 89, 0.31);
+  background-color: #4b4b4b;
 }
+footer .footer .FooterAll{
+  height: auto;
+  margin-left: 4.5%;
+  /*border: solid 1px black;*/
+}
+footer .footer .Footer1{
+  margin-left:7% ;
+  margin-top:50px;
+  height: 340px;
+  width: 25%;
+  /*border: solid 1px red;*/
+  float: left;
+}
+
+footer .footer .Footer1 .Footer1-1{
+  list-style: none;
+}
+footer .footer .Footer1 .Footer1-1 li{
+  border-bottom: solid 1px #5b5b5b;
+  height: 65px;
+  color: white;
+  line-height: 65px;
+  font-size: 1.2em;
+}
+footer .footer .Footer1 .Footer1-1 li a{
+  text-decoration: none;
+  color: #e1d9bf;
+}
+footer .footer .Footer1 .Footer1-1 li a:hover{
+  color:#fc736e;
+
+}
+footer .footer .Footer1 .Footer1-1 .Footer1-1T{
+  color: white;
+  height: 36px;
+  line-height: 36px;
+  font-size: 1.7em;
+}
+footer .footer .Footer1 .Footer1-1 .Footer1-1T .title{
+  border-bottom: solid 1.5px #ff655b;
+  padding: 4px;
+}
+footer .footer .Footer1 .Footer1-1 #Link a{
+  /*padding: 10px;*/
+  text-decoration: none;
+}
+footer .footer .Footer1 .Footer1-1 #Link a:hover{
+  color: whitesmoke;
+}
+footer .footer .Footer1 .Footer1-1 #Link span{
+  padding: 7px;
+  margin-right: 10px;
+  border: solid 1px #5b5b5b ;
+}
+footer .footer .Footer1 .Footer1-1 #Link span:hover{
+  background-color: #ff736e;
+  color: white;
+}
+footer .footer .Footer2{
+  height: 80px;
+  background-color: black;
+  border: solid 1px #6c6c6c;
+}
+footer .footer .Footer2 ul{
+  list-style: none;
+  height: 30px;
+  margin-left: 25%;
+  margin-top: 10px;
+
+}
+footer .footer .Footer2 ul li{
+  float: left;
+  color: #676767;
+  width: 20%;
+
+}
+
 

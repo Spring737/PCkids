@@ -9,6 +9,7 @@ import { CannotFindComponent } from './cannot-find/cannot-find.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PersonComponent } from './person/person.component';
+import { GoodsDetailComponent } from './goods-detail/goods-detail.component';
 
 
 
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'good-shop',
     component: GoodShopComponent
+  },
+  {
+    path: 'goods-detail',
+    component: GoodsDetailComponent
   },
 
   {
